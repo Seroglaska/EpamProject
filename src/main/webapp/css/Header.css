@@ -1,0 +1,111 @@
+header {
+    text-align: justify;
+    padding: 0 5%;
+    background: #212529;
+    color: #ffc918;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.headLink {
+    color: #ffc107;
+}
+
+form {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+header div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header h1 {
+    width: 50%;
+    text-align: left;
+    padding-top: 0.5em;
+}
+
+header div {
+    padding-top: 1em;
+}
+
+#signUp_button {
+    background: #ffc107;
+    border-color: #ffc107;
+    transition-duration: 0.4s;
+    padding: 0.25em 1em;
+}
+
+#signUp_button:hover {
+    cursor: pointer;
+    background: #fff;
+    border-color: #fff;
+    color: #212529;
+}
+
+#signIn_button {
+    background: #212529;
+    border-color: #ffc107;
+    border-radius: 30px;
+    color: #ffc107;
+    transition-duration: 0.4s;
+    padding: 0.25em 1em;
+}
+
+#signIn_button:hover {
+    cursor: pointer;
+    background: #fff;
+    border-color: #fff;
+    color: #212529;
+}
+
+
+.localeBtn {
+    background: #212529;
+    border-color: #ffc107;
+    color: #ffc107;
+    transition-duration: 0.4s;
+    border-radius: 0.75em;
+    padding: 0.25em 1em;
+}
+
+.localeBtn:hover {
+    cursor: pointer;
+    background: #fff;
+    border-color: #fff;
+    color: #212529;
+}
+
+#orderImg {
+    width: 3em;
+    height: 2em;
+}
+
+#accImg {
+    width: 2em;
+    height: 2em;
+}
+
+.boxHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parentBoxHeader {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}

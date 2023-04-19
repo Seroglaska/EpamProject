@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+  <display-name>Restaurant</display-name>
+
+  <context-param>
+    <param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
+    <param-value>resources.local</param-value>
+  </context-param>
+
+  <error-page>
+    <location>/WEB-INF/jsp/Error.jsp</location>
+  </error-page>
+
+  <servlet>
+    <servlet-name>Home</servlet-name>
+    <jsp-file>/index.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Home</servlet-name>
+    <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Controller</servlet-name>
+    <servlet-class>com.epam.restaurant.controller.Controller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Controller</servlet-name>
+    <url-pattern>/restaurant</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AuthorizationPage</servlet-name>
+    <jsp-file>/WEB-INF/jsp/AuthorizationPage.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AuthorizationPage</servlet-name>
+    <url-pattern>/authorizationPage</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>RegistrationPage</servlet-name>
+    <jsp-file>/WEB-INF/jsp/RegistrationPage.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegistrationPage</servlet-name>
+    <url-pattern>/registrationPage</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ErrorPage</servlet-name>
+    <jsp-file>/WEB-INF/jsp/Error.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ErrorPage</servlet-name>
+    <url-pattern>/errorPage</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>CurrentOrder</servlet-name>
+    <jsp-file>/WEB-INF/jsp/CurrentOrder.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CurrentOrder</servlet-name>
+    <url-pattern>/showCurrentOrder</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>PlaceOrder</servlet-name>
+    <jsp-file>/WEB-INF/jsp/PlaceOrder.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PlaceOrder</servlet-name>
+    <url-pattern>/showPlaceOrder</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>FindUsers</servlet-name>
+    <jsp-file>/WEB-INF/jsp/FindUsers.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FindUsers</servlet-name>
+    <url-pattern>/showFindUsers</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>FinishingTheOrder</servlet-name>
+    <jsp-file>/WEB-INF/jsp/FinishingTheOrder.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FinishingTheOrder</servlet-name>
+    <url-pattern>/finishingTheOrder</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>OnlinePay</servlet-name>
+    <jsp-file>/WEB-INF/jsp/OnlinePay.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OnlinePay</servlet-name>
+    <url-pattern>/onlinePay</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AccountPage</servlet-name>
+    <jsp-file>/WEB-INF/jsp/AccountPage.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AccountPage</servlet-name>
+    <url-pattern>/showAccount</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>PersonalInfoPage</servlet-name>
+    <jsp-file>/WEB-INF/jsp/PersonalInfo.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PersonalInfoPage</servlet-name>
+    <url-pattern> /personalInfo</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>HistoryOfOrders</servlet-name>
+    <jsp-file>/WEB-INF/jsp/HistoryOfOrders.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HistoryOfOrders</servlet-name>
+    <url-pattern>/historyOfOrders</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>OrdersInProcessing</servlet-name>
+    <jsp-file>/WEB-INF/jsp/OrdersInProcessing.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrdersInProcessing</servlet-name>
+    <url-pattern>/ordersInProcessing</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ConfirmationOfOrders</servlet-name>
+    <jsp-file>/WEB-INF/jsp/ConfirmationOfOrders.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConfirmationOfOrders</servlet-name>
+    <url-pattern>/confirmationOfOrders</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Kitchen</servlet-name>
+    <jsp-file>/WEB-INF/jsp/Kitchen.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Kitchen</servlet-name>
+    <url-pattern>/kitchen</url-pattern>
+  </servlet-mapping>
+
+ 
+
+</web-app>

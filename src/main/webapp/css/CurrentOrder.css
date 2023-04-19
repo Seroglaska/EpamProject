@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+
+.main {
+    padding: 1em;
+    text-align: center;
+}
+
+
+@media (max-width: 30em) {
+    .main {
+        flex: 1 0 auto;
+    }
+}
+
+@media (min-width: 30em) {
+    header {
+        display: block;
+    }
+
+    .wrapper {
+        flex-direction: row;
+    }
+
+    .main {
+        flex: 1 1 auto;
+    }
+}
+
+h1 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    text-align: center;
+}
+
+.DishName {
+    text-align: left;
+    margin-left: 8%;
+}
+
+table {
+    margin: auto;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    background: white;
+    width: 90%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+td {
+    color: #669;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+#tdWithForm {
+    padding: 0;
+}
+
+#removeImg {
+    width: 20px;
+}
+
+tr:hover td {
+    background: #e8edff;
+}
+
+input[type=text] {
+    display: inline-block;
+    margin: 2px;
+    text-align: center;
+    width: 10%;
+}
+
+button {
+    display: inline-block;
+    margin: auto;
+}
+
+#placeOrderBtn {
+    position: relative;
+    left: 30%;
+    border-radius: 30px;
+    background: #ffc107;
+    border-color: #ffc107;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+#goBackImg {
+    float: left;
+    width: 2em;
+    height: 2em;
+}
